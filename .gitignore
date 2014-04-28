@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .idea
 node_modules
 *.DS_Store
@@ -29,5 +28,4 @@ build/Release
 # Dependency directory
 # Deployed apps should consider commenting this line out:
 # see https://npmjs.org/doc/faq.html#Should-I-check-my-node_modules-folder-into-git
-node_modules
->>>>>>> f19fa1be4b5477f3196da1aace437a50f40d07e6
+data
