@@ -27,7 +27,22 @@ block content
                 thead
                     th Colorstyle
                     th File_Path
-                    th Photo_Date
+                    th Delete?
                 tbody
         // /Image LIST
-    // /WRAPPER
+        // ADD IMAGE
+        h2 Add Image
+        #addImage
+            fieldset
+                input#inputImageColorstyle(type='text', placeholder='Colorstyle')
+                input#inputImageFilePath(type='text', placeholder='BrowseToUpload')
+                br
+                input#inputImagePhotoDate(type='date', placeholder='Photo Date')
+                input#inputImageMetadata(type='text', placeholder='key: value')
+                br
+                input#inputImageSessionNotes(type='text', placeholder='Onset Notes')
+                input#inputImagePhotoNotes(type='text', placeholder='Image Notes')
+                br
+                button#btnAddImage Add Image
+        // /ADD IMAGE
+        // /WRAPPER
