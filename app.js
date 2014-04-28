@@ -27,6 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+////////////////////////////////////////////////////////////////////////
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;
@@ -37,6 +38,8 @@ app.use(function(req,res,next){
 app.use('/', routes);
 app.use('/users', users);
 
+////////////////////////////////////////////////////////////////////////
+//////////////  Database Connection ////////////////////////////////////
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
