@@ -8,6 +8,9 @@ var imageListData = [];
 // DOM Ready =============================================================
 $(document).ready(function() {
 
+    // Imagename link click
+    $('#imageList table tbody').on('click', 'td a.linkshowimage', showImageInfo);
+
     // Populate the image table on initial page load
     populateTable();
 

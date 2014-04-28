@@ -4,12 +4,28 @@ block content
     p Below Should Be Some #{title}
     // Wrapper
     #wrapper
+        // Image INFO
+        #imageInfo
+            h2 Image Info
+            p
+                strong Colorstyle:
+                | <span id='imageInfoColorstyle'></span>
+                br
+                strong FilePath:
+                | <span id='imageInfoFilePath'></span>
+                br
+                strong PhotoDate:
+                | <span id='imageInfoPhotoDate'></span>
+                br
+                strong ShotNumber:
+                | <span id='imageInfoShotNumber'></span>
+        // /Image INFO
         // Image LIST
         h2 Image List
         #imageList
             table
                 thead
-                    th Image_Name
+                    th Colorstyle
                     th File_Path
                     th Photo_Date
                 tbody
